@@ -1,0 +1,47 @@
+------------------------------------------------------------------------
+第1步：与SMTP服务器建立连接：
+SslConnection:host=smtp.qq.com,port=465
+Connection OK.Wait for the server's response 220
+220 smtp.qq.com Esmtp QQ Mail Server
+------------------------------------------------------------------------
+第2步：客户端发送HELO命令以标识发件人自己的身份，然后客户端发送MAIL命令；
+       服务器端正希望以OK作为响应，表明准备接收
+<-EHLO localhost ,wait for 250
+250-smtp.qq.com
+250-PIPELINING
+250-SIZE 73400320
+250-AUTH LOGIN PLAIN
+250-AUTH=LOGIN
+250-MAILCOMPRESS
+250 8BITMIME
+
+<-AUTH PLAIN ,wait for 235
+235 Authentication successful
+
+--------------------------------------------------------------------------
+第3步:客户端发送RCPT命令，以标识该电子邮件的计划接收人，可以有多个RCPT行；
+      服务器端则表示是否愿意为收件人接收邮件
+<-MAIL FROM: <956302200@qq.com>,wait for 250
+250 Ok
+<-RCPT TO: <523915712@qq.com>,wait for 250
+250 Ok
+--------------------------------------------------------------------------
+第4步:协商结束，发送邮件，用命令DATA发送
+<-DATA:  wait for 354
+354 End data with <CR><LF>.<CR><LF>
+--------------------------------------------------------------------------
+第5步:以.表示结束输入内容一起发送出去
+<-.  wait for 250
+250 Ok: queued as
+<-MAIL FROM: <956302200@qq.com>,wait for 250
+250 Ok
+<-RCPT TO: <523915712@qq.com>,wait for 250
+250 Ok
+第4步:协商结束，发送邮件，用命令DATA发送
+<-DATA:  wait for 354
+354 End data with <CR><LF>.<CR><LF>
+第5步:以.表示结束输入内容一起发送出去
+<-.  wait for 250
+250 Ok: queued as 
+----------------------------------------------------------------------------
+第6步：结束此次发送，用QUIT命令退出

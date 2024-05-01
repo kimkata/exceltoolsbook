@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ExcelTools使用手册 2.3.0</title>
+    <link rel="stylesheet" type="text/css" href="./images/stylesheets.css">
+</head>
+
+<body class="book toc2 toc-left">
+    <div id='header'>
+        <div id="header">
+            <h3>Excel表格批量处理助手</h3>
+            <div id="toc" class="toc2">
+                <div id="toctitle">手册目录列表</div>
+                <ul class="sectlevel0">
+                    <li>
+                        <a href="#_myinfo">激活软件</a>
+                        <ul class="sectlevel1">
+                            <li>
+                                <a href="#_introduction">软件功能简介</a>
+                            </li>
+                            <li>
+                                <a href="#_getting_started" style="color:blue">激活本软件</a>
+                                <ul class="sectlevel2">
+                                    <li>
+                                        <a href="#_how_to_activate">✔激活的原理介绍</a>
+                                    </li>
+                                    <li>
+                                        <a href="#_how_to_get_machinecode_and_activationcode">✔如何获取机器码和激活码?</a>
+                                    </li>
+                                    <li>
+                                        <a href="#_about_safety">✔关于软件安全性的说明</a>
+                                    </li>
+                                    <li>
+                                        <a href="#__how_to_deal_with_abortion">✔软件在使用过程中崩溃了，怎么办?</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#_split_by_members_simple" style="color:blue">简单成员拆分 难度:★★★ </a>
+                                <ul class="sectlevel2">
+                                    <li>
+                                        <a href="#_split_by_members_simple_steps">✔简单成员拆分 操作步骤</a>
+                                    </li>
+                                    <li>
+                                        <a href="#_split_by_members_simple_tips">✔应该选择什么样的文件名结构？</a>
+                                    </li>
+                                    <li>
+                                        <a href="#_split_by_members_simple_tips">✔如何处理正文中的合并单元格？</a>
+                                    </li>
+                                    <li>
+                                        <a href="#_split_by_members_simple_tips">✔拆分保存为pdf格式时的注意事项？</a>
+                                    </li>
+                                    <li>
+                                        <a href="#_split_by_members_simple_errors">✔常见操作错误</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#_advanced_split_by_members" style="color:blue">高级成员拆分 难度:★★★★</a>
+                                <ul class="sectlevel2">
+                                    <li>
+                                        <a href="#_一簿多表拆分_使用步骤">✔一簿多表拆分 操作步骤</a>
+                                    </li>
+                                    <li>
+                                        <a href="#_一簿多表拆分_使用技巧">✔一簿多表拆分 使用技巧</a>
+                                    </li>
+                                    <li>
+                                        <a href="#_一簿多表拆分_常见问题">✔一簿多表拆分 常见操作错误</a>
+                                    </li>
+                                    <li>
+                                        <a href="#_批量简单成员拆分_使用步骤">✔批量简单成员拆分 操作步骤</a>
+                                    </li>
+                                    <li>
+                                        <a href="#_批量简单成员拆分_使用技巧">✔批量简单成员拆分 使用技巧</a>
+                                    </li>
+                                    <li>
+                                        <a href="#_批量简单成员拆分_常见问题">✔批量简单成员拆分 常见操作错误</a>
+                                    </li>
+
+
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#_simple_split" style="color:blue">简易拆分 难度:★</a>
+                                <ul class="sectlevel2">
+                                    <li>
+                                        <a href="#_按固定行数拆分_使用步骤">✔按固定行数拆分</a>
+                                    </li>
+                                    <li>
+                                        <a href="#_按生成的工作簿个数拆分_使用步骤">✔按生成的工作簿个数拆分</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="##_other_split" style="color:blue">其他拆分方式 难度:★★★</a>
+                                <ul class="sectlevel2">
+                                    <li>
+                                        <a href="#_按Sheet页名称拆分_使用步骤">✔按表格名称拆分 操作方法</a>
+                                    </li>
+                                    <li>
+                                        <a href="#_数据透视表拆分_使用步骤">✔数据透视表拆分 操作方法</a>
+                                    </li>
+                                    <li>
+                                        <a href="#_数据透视表拆分_使用技巧">✔数据透视表拆分 问答</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#_send_emails" style="color:blue">发送邮件 难度:★★★★</a>
+                                <ul class="sectlevel2">
+                                    <li>
+                                        <a href="#_send_emails_steps">✔邮件发送的主要步骤</a>
+                                    </li>
+                                    <li>
+                                        <a href="#_send_emails_tips">✔邮件发送相关问题</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#_如何设置统一回复至(ReplyTo)邮箱">✔如何设置代发和统一回复至邮箱？</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#_如何导出数据库中的邮件发送结果">✔如何从数据库中导出发送结果？</a>
+                                    </li>
+                                    <li>
+                                        <a href="#_如何查看邮件发送失败的原因">✔如何查看邮件发送失败的原因？</a>
+                                    </li>
+                                    <li>
+                                        <a href="#_send_emails_常见问题">✔如何确定邮件已经发送成功？</a>
+                                    </li>
+                                    <li>
+                                        <a href="#_显示发送成功，但为什么没有收到邮件">✔显示发送成功，但为什么没有收到邮件？</a>
+                                    </li>
+                                    <li>
+                                        <a href="#_如何避免触发反垃圾邮件策略">✔如何避免触发反垃圾邮件策略？</a>
+                                    </li>        
+                                    <li>
+                                        <a href="#_send_emails_常见问题">✔为什么发件箱里没有发送记录？</a>
+                                    </li>
+                                    <li>
+                                        <a href="#_send_emails_常见问题">✔如何获取邮箱的授权码？</a>
+                                    </li>
+                                    <li>
+                                        <a href="#_send_emails_常见问题">✔容易出错的地方</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#_如何使用OutLook发送邮件" style="color:blue">邮件工具 难度:★★★</a>
+                                <ul class="sectlevel2">
+                                    <li>
+                                        <a href="#_文件搜索工具">✔如何搜索文件夹，获取文件夹中的文件列表？</a>
+                                    </li>
+                                    <li>
+                                        <a href="#_文件搜索工具">✔搜索文件 问答</a>
+                                    </li>
+                                    <li>
+                                        <a href="#_使用OutLook发送邮件_使用技巧">✔如何使用OutLook发送邮件？</a>
+                                    </li>
+                                    <li>
+                                        <a href="#_使用OutLook发送邮件_常见问题">✔使用OutLook发送邮件,注意事项？</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="#_合并表格" style="color:blue">按行合并表格 难度:★★★★★</a>
+                                <ul class="sectlevel2">
+                                    <li>
+                                        <a href="#_表格合并的基本思路">✔表格合并的基本思路</a>
+                                    </li>
+                                    <li>
+                                        <a href="#_按行合并 使用步骤">✔按行合并 使用步骤</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#_合并表格_使用技巧">✔如何跳过表头合并?</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#_表格合并的基本思路">✔合并时,如何直接移动sheet页,而不是复制内容?</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#_如何删除合并结果中的空白行">✔如何删除合并结果中的无用行?</a>
+                                    </li>
+                                    <li>
+                                        <a href="#_按行合并_常见问题">✔按行合并中的常见问题</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="#_按列合并表格" style="color:blue">按列合并表格 难度:★★★★★</a>
+
+                                <ul class="sectlevel2">
+                                    <li>
+                                        <a href="#_按列合并表格">✔按列合并的基本思路</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#_按列合并 使用步骤">✔按列合并 使用步骤</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#_合列表格_使用技巧">✔按列合并中的常见问题:</a>
+                                    </li>
+                                </ul>
+
+                            </li>
+
+                            <li>
+                                <a href="#_清理表格" style="color:blue">删除指定列的空白行 难度:★★★</a>
+                                <ul class="sectlevel2">
+                                    <li>
+                                        <a href="#_删除空白行_使用步骤">✔删除空白行 使用步骤</a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#_删除空白行_使用步骤">✔删除空白行 使用技巧</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#_清除多余单元格格式_使用步骤" style="color:blue">清除多余的单元格区域 难度:★★★</a>
+                                <ul class="sectlevel2">
+                                    <li>
+                                        <a href="#_清除多余单元格格式_使用步骤">✔使用步骤</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="#_文件批量处理" style="color:blue">文件批量处理 难度:★★★</a>
+
+                                <ul class="sectlevel2">
+                                    <li>
+                                        <a href="#_文件批量处理_使用步骤">✔文件批量处理 使用步骤</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="#_结语" style="color:blue">✔最后的结语</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id='content'>
+        <div class="sect1">
+            <h2 id="_myinfo">☀激活软件</h2>
+            <div class="sectionbody">
+                <div class="paragraph">
+                    <div id="gitweb" class="imageblock">
+                        <div class="content">
+							<img src="images/exceltools.png" alt="EXCEL批处理工具激活页面">
+                        </div>
+                        <div class="title">EXCEL批处理工具激活页面</div>
+                    </div>
+                    <p>注：每一台电脑的授权费用为20元，根据电脑CPU系列号生成激活码，请先与作者联系获取激活码，成功激活以后，妥善保管自己的激活码，遗失不补。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="sect1">
+            <h2 id="_introduction">☀软件功能简介</h2>
+            <div class="sectionbody">
+                <div class="paragraph">
+                    <p>1.本软件使用Qt MinGw 5.6.3开发，开发语言为C++，同时支持xp sp3，windows 7，8，10等平台，以及office 2003，2007，2010，2013，2016以及WPS专业版!</p>
+                    <p>2.暂时不支持office 365，仅部分功能支持WPS个人版，如果使用WPS个人版出现问题，请更换为WPS专业版!</p>
+                    <p>3.如果使用Jmail进行发送邮件，则需要安装Jmail组件，本软件包中提供了Jmail 4.5版本的组件，可自行安装!</p>
+                    <p>4.使用使用outlook进行邮件发送，则需要确定电脑上安装了outlook，并且配置了可以发送邮件的电子邮件账户!</p>
+                    <p>5.本软件不是免费软件，如需要使用，请支持正版!</p>
+                    <p>6.软件未激活时，所有的确定按钮不可用!</p>
+                    <p style="color:red;">7.由于国内WPS，福昕PDF阅读器等安装和卸载可能会破坏office注册表，如果所有文件使用异常，请尝试卸载这些软件。WPS在卸载后，可能需要重装安装或修复ms office。</p>
+                </div>
+            </div>
+        </div>
+        <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+        <div class="sect1">
+            <h2 id="_introduction">☀激活本软件</h2>
+            <div class="sectionbody">
+                <div class="paragraph">
+                    <p>1.下载本软件后，使用解压工具将压缩包解压到本地，打开文件夹中的exe文件，在激活页面获取机器码，注意每一台电脑的机器码都是不同的!</p>
+                    <p>2.将机器码发给作者，或者从作者提供的网址中输入机器码，获取激活码!</p>
+                    <p>3.将激活码复制到软件的激活框内，注意激活码前后没有空格!</p>
+                    <p>4.软件成功激活!</p>
+                    <p style="color:red;">5.如果激活本软件后，再次打开时，仍然要求激活，请使用管理员权限运行本软件，并重新激活。</p>
+                    <p>6.软件未激活时，所有的线程启动按钮不可用，请在激活软件后，使用本软件!</p>
+                </div>
+                <div class="sect2">
+                    <h3 id="_how_to_activate">✔激活原理介绍</h3>
+                    <div class="paragraph">
+                        <p>
+                            本软件会自动获取运行环境中的计算机CPU系列号，采用特殊的加密算法，生成一个激活码，然后与输入的激活码进行比对，如果相同，则视为成功激活。 因此，本软件的激活不需要联网，在单位的内网电脑上也可以使用。
+                        </p>
+                        <p>如果您使用的是单位的内网计算机，无法联网，那可以将机器码拍照下来或抄下来发给作者，在获取激活码以后，手工输入激活码，同样可以激活!</p>
+                    </div>
+                    <div class="sect3">
+                        <h4 id="_如何获取机器码和激活码?">✔如何获取机器码和激活码?</h4>
+                        <div class="paragraph">
+                            <p>
+                                ■打开本软件，在软件的激活页面，就可以直接获取机器码，点击按钮"点击此处复制"就可以把机器码复制到粘贴板上!
+                            </p>
+                            <p>
+                                ■将获取的机器码发给作者，或者将机器码复制到作者提供的网址中，即可获取激活码!
+                            </p>
+                            <div id="gitweb" class="imageblock">
+                                <div class="content">
+                                    <img src="images/获取机器码和激活码.png" alt="获取机器码和激活码界面">
+                                </div>
+                                <div class="title">在软件页面中获取机器码和激活码</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sect3">
+                        <h4 id="_#_about_safety">✔#_about_safety</h4>
+                        <div class="paragraph">
+                            <p>
+                                ■很安全，不会获取个人信息！使用360安全卫士或者各类电脑管家可能会被拦截本软件，因为作者没有购买安全证书。本软件的功能中，仅有发送邮件功能需要联网，其他功能均无需联网。如果大家不放心，可以使用fiddler，wireshark等抓包工具对本软件进行测试。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="sect3">
+                        <h4 id="__how_to_deal_with_abortion">✔软件在使用过程中崩溃了，怎么办?</h4>
+                        <div class="paragraph">
+                            <p style="color:blue">■软件崩溃的原因多种多样，总体而言，可能有以下几种原因：</p>
+                            <p style="color:red">1.office办公软件版本问题:有一些第三方修改过的办公软件修改了某些组件，导致VBA编程环境有问题，这种情况可以卸载办公软件后，全新安装微软官方Office原版文件或者WPS专业增强版本！</p>
+                            <p style="color:red">2.Office办公软件信任设置的问题，文件打开时被阻止:打开EXCEL选项->信任中心->信任中心设置->文件阻止设置->将所有阻止的选项取消！</p>
+                            <p style="color:red">3.国产WPS的安装可能会直接破坏office注册表，而在卸载时，它没有对注册表进行修复，因此可能会出现异常，这种情况下，需要重装安装office软件或者使用office安装包中的setup.exe进行修复。</p>
+                            <p style="color:red">4.福昕foxit PDF阅读器的安装可能会破坏office接口，导致com接口调用异常，在实际测试中，将福昕pdf阅读器卸载，即可恢复正常！推荐使用abode pdf reader.</p>
+                            <div id="gitweb" class="imageblock">
+                                <div class="content">
+                                    <img src="images/信任中心设置.png" alt="信任中心设置">
+                                </div>
+                                <div class="title">在EXCEL信任中心取消文件阻止选项</div>
+                            </div>
+                            <p style="color:red">5.软件使用过程中崩溃，在退出时没有来得及关闭文件和退出Excel进程，这时如果打开相应的文件，会打开失败。请按ctrl+shift+del，或在任务栏单击右键，打开任务管理器，找到EXCEL进程，并杀死它!
+                            当然了，如果你是一个电脑小白，不知道如何杀死EXCEL线程，那重启电脑也可以解决文件占用的问题！
+                            </p>
+                            <div id="gitweb" class="imageblock">
+                                <div class="content">
+                                    <img src="images/taskmanager.png" alt="关闭EXCEL进程页面">
+                                </div>
+                                <div class="title">在任务管理器中结束EXCEL进程，以解除对文件的占用</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+        <hr>
+        <div class="sect1">
+            <h2 id="_简单成员拆分">☀简单成员拆分</h2>
+            <div class="sectionbody">
+                <div class="paragraph">
+                    <p style="color:blue">功能：使用本功能，可以将EXCEL表中的一个表格按照某一列的成员拆分成独立的EXCEL工作簿文件!</p>
+                    <div id="gitweb" class="imageblock">
+                        <div class="content">
+                            <img src="images/简单成员拆分示例.png" alt="简单成员拆分示例">
+                        </div>
+                        <div class="title">简单成员拆分示例</div>
+                    </div>
+                </div>
+                <h3 id="_简单成员拆分_使用步骤">✔简单成员拆分 使用步骤:</h3>
+                <div class="paragraph">
+                    <p>1.选择要拆分的Excel文件!</p>
+                    <p>2.选择要拆分的sheet页 (注意:选择文件后，软件会获取表格中的sheet页信息，如果表格有密码，请先取消密码，再拆分)!</p>
+                    <p>3.可选项：选择要附加到拆分结果中的sheet页，例如：你要在每一个拆分得到的工作簿中附加一张说明性的表格之类的，请在这里选择这张表。如果没有，则跳过!</p>
+                    <p>4.选择或输入拆分成员所在的列标！输入项必须是字母，例如：要按C列拆分，则输入字母C，不区分大小写！</p>
+                    <p>5.选择或输入数据正文开始的行号！输入项必须是数字，请注意：由于软件无法提前获取标题行占用了多少行，因此，这里输入的值必须是数据正文开始的行号，一般为标题行的下一行。 例如：标题行是第1行，那么数据正文开始的行号可能就是2。
+                    </p>
+                    <p>6.可选项：选择或输入附加的成员值。例如：需要为所有拆分结果工作簿中添加该成员，则在此处填写，当然了，该成员也可以为汇总，合计之类的成员值。</p>
+                    <p>7.选择生成的文件名结构，本软件提供了3种文件名结构，请按您的具体需求选择。</p>
+                    <p>8.选择拆分生成的工作簿的格式，如果要生成pdf格式，那么请提前在表格中设置打印格式，并保存，否则生成的pdf文件格式会很乱，内容可能会分散在不同的页面上。</p>
+                    <p>9.保留公式和复制打印格式：如果想保留页眉页脚等打印格式，请勾选此选择，使用此选项会导致拆分速度明显变慢，因此除非有需求，否则不建议勾选。</p>
+                    <p>10.以上选择设置完毕，请点击开始拆分。</p>
+                    <div id="gitweb" class="imageblock">
+                        <div class="content">
+                            <img src="images/简单成员拆分过程图.png" alt="简单成员拆分过程图">
+                        </div>
+                        <div class="title">简单成员拆分过程图</div>
+                    </div>
+                    <div id="gitweb" class="imageblock">
+                        <div class="content">
+                            <img src="images/简单成员拆分结果展示.png" alt="简单成员拆分结果展示">
+                        </div>
+                        <div class="title">简单成员拆分结果展示</div>
+                    </div>
+                </div>
+
+                <div class="sect2">
+                    <h3 id="_简单成员拆分_使用技巧">✔简单成员拆分 使用技巧</h3>
+                    <div class="paragraph">
+                        <h5>✎1.如何选择生成的文件名结构？</h5>
+                        <p>您可以选择三种文件名结构，如果要将拆分后生成的文件作为邮件的附件发送给别人，建议选择 sheet页名称+成员名的方式，因为在邮件工具中检索附件时，本软件可以自动获取文件名中的成员名的部分， 方便您使用vlookup函数从通讯录中按成员名查找邮箱地址。
+                        </p>
+                        <p>另外，如果成员名中含有不能作为文件名的某些字符，例如：\/:*?"|等，本软件会有一个替换操作，将这些符号替换为近似的中文符号。</p>
+                        <div id="gitweb" class="imageblock">
+                            <div class="content">
+                                <img src="images/不能作为文件名的字符.png" alt="不能作为文件名的字符">
+                            </div>
+                            <div class="title">如果成员名中有不能作为文件名的字符，会被替换为近似的中文符号</div>
+                        </div>
+                    </div>
+                    <div class="paragraph">
+                        <h5>✎2.如果要拆分的工作表中含有合并的单元格，是否能够拆分成功？</h5>
+                        <p>不一定！具体要看合并单元格的位置，一般来说，如果合并单元格位于表头的部分，是不会有影响的，本软件在拆分时，会把表头作为一个整体来复制到新生成的表格中；但是，当合并单元格位于正文区域，并且筛选的时候合并单元格所在行的某些内容在筛选的结果之外，而某些行又在筛选的结果之内，这样会导致数据复制失败。因此，会发生异常。
+                        </p>
+                        <p>如果没有特殊的要求，要拆分的工作表中最好不要有合并单元格，您可以将它们取消合并，尽量不要在正文数据区域加入合并单元格，合并单元格在数据处理中可能会带来错误！</p>
+                    </div>
+                    <div class="paragraph">
+                        <h5>✎3.拆分输入为pdf格式时的注意事项？</h5>
+                        <p>请一定要在拆分之前对表格调整打印格式，打印预览好，没有问题了，并保存，再拆分。否则，拆分出来的格式是乱的，没有什么意义。另外，因为涉及到大量的格式转换，拆分为pdf的功能使用起来要慢一些。</p>
+                    </div>
+
+                </div>
+                <div class="sect2">
+                    <h3 id="_简单成员拆分_常见问题">✔简单成员拆分 常见问题</h3>
+                    <div class="paragraph">
+                        <h5>✎1.拆分成员所在的列标应该为字母，但是填写为数字！=>错误</h5>
+                        <p>
+                            请按提示填写，EXCEL中列用字母表示，而行用数字表示。因此，列标必须是字母，如：A，B，C，D等。
+                        </p>
+                    </div>
+                    <div class="paragraph">
+                        <h5>✎2.将正文开始的行号填写标题行号！=>错误</h5>
+                        <p>
+                            一般情况下，标题行占有一行，但是也有一些表格标题行占2行或者3行等，因此无法根据标题行的行号推断出表头结束的位置。所以，这里要求填写的是数据正文开始的行号，例如：标题行在第一行，而标题行占1行，则正文开始的行号为2。
+                        </p>
+                        <div id="gitweb" class="imageblock">
+                            <div class="content">
+                                <img src="images/正文开始的行号.png" alt="正文开始的行号">
+                            </div>
+                            <div class="title">正文开始的行号 不等于 标题行号！</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+        <hr>
+        <div class="sect1">
+            <h2 id="_高级成员拆分">☀高级成员拆分</h2>
+            <div class="sectionbody">
+                <div class="paragraph">
+                    <p style="color:blue">功能：使用本功能，主要实现了以下2个功能：</p>
+                    <p style="color:blue">1.对一个工作簿中的多个工作表同时拆分：例如一个工作簿中既有工资表，又有奖金表，需要按照员工姓名进行拆分，每位员工需要生成一个工作簿，此工作簿中既要有工资表，又要有奖金表，还可能要附加其他的说明性表格，如奖金核算标准等。</p>
+                    <div id="gitweb" class="imageblock">
+                        <div class="content">
+                            <img src="images/需要同时拆分一个工作簿中的同张表.png" alt="需要同时拆分一个工作簿中的同张表">
+                        </div>
+                        <div class="title">需要同时拆分一个工作簿中的2张表：工资表和奖金表，并附加 核算方法！</div>
+                    </div>
+                    <p style="color:blue">2.简单成员拆分的批量操作的实现：简单成员拆分一次只能拆分一个工作簿中的一个表格，此功能实现了批量拆分，借助此功能的反复操作，可以实现如同先按C列进行拆分，再按D列进行拆分这样的功能。</p>
+                    <div id="gitweb" class="imageblock">
+                        <div class="content">
+                            <img src="images/需要同时对多个工作簿中的表格进行拆分.png" alt="需要同时对多个工作簿中的表格进行拆分图">
+                        </div>
+                        <div class="title">需要同时对多个工作簿中的表格进行拆分：简单成员拆分的批量操作！</div>
+                    </div>
+                </div>
+                <h3 id="_高级成员拆分_使用步骤">同一工作簿中的多个工作表同时拆分 使用步骤:</h3>
+                <div class="paragraph">
+                    <div id="gitweb" class="imageblock">
+                        <div class="content">
+                            <img src="images/同一工作簿内多个sheet页同时拆分界面.png" alt="同一工作簿内多个sheet页同时拆分界面图">
+                        </div>
+                        <div class="title">同一工作簿内多个sheet页同时拆分界面</div>
+                    </div>
+                    <p>1.选择要拆分的Excel文件!</p>
+                    <p>2.点击生成参数表格，生成参数表格后，软件会有提示，并且在界面文本框中会填写入参数表格的路径，参数表格位于您选择的文件所在的文件目录下!</p>
+                    <p>3.难点：找到参数表格，并编辑拆分的参数！</p>
+                    <p>4.参数表中分为3个sheet页，分别为:参数设置，分组参数和忽略的成员。</p>
+                    <p style="color:blue">■ 参数设置:使用数字1表示参与拆分，用-1表示不参与拆分，但是需要将该表格移动到拆分生成的表格中，如果不移动也不参与拆分，则填写为0，或者将相应的记录直接删除。</p>
+                    <div id="gitweb" class="imageblock">
+                        <div class="content">
+                            <img src="images/高级拆分_同一工作簿中多个表格拆分_参数设置.png" alt="高级拆分_同一工作簿中多个表格拆分_参数设置图">
+                        </div>
+                        <div class="title">高级拆分_同一工作簿中多个表格拆分_参数设置 请看示例</div>
+                    </div>
+                    <p style="color:blue">■ 成员分组(可选项)：按需要对成员进行分组。例如：将人力资源部的人员分为一组，将市场部的人员分为一组，这样会按分组生成人力资源部的表格和市场部的表格。</p>
+                    <div id="gitweb" class="imageblock">
+                        <div class="content">
+                            <img src="images/高级拆分_分组数据.png" alt="高级拆分_分组数据图">
+                        </div>
+                        <div class="title">高级拆分_分组数据 可选项</div>
+                    </div>
+
+                    <p style="color:blue">■ 忽略某些成员(可选项):如果某些成员，不想让他们参与拆分，则可以在此表格中设置。</p>
+                    <div id="gitweb" class="imageblock">
+                        <div class="content">
+                            <img src="images/高级拆分_忽略成员.png" alt="高级拆分_忽略成员">
+                        </div>
+                        <div class="title">高级拆分_忽略成员 可选项</div>
+                    </div>
+                    <p>5.以上选择设置完毕，保存并关闭参数表格。然后，点击开始拆分。</p>
+                    <div id="gitweb" class="imageblock">
+                        <div class="content">
+                            <img src="images/高级拆分_同一工作簿中多个表格拆分_结果展示.png" alt="高级拆分_同一工作簿中多个表格拆分_结果展示图">
+                        </div>
+                        <div class="title">高级拆分_同一工作簿中多个表格拆分_结果展示</div>
+                    </div>
+                </div>
+                <div class="sect2">
+                    <h3 id="_一簿多表拆分_使用技巧">✔一簿多表拆分 使用技巧</h3>
+                    <div class="paragraph">
+                        <h5>✎1.什么情况下需要使用到对同一工作簿中的多个表格同时进行拆分的功能？</h5>
+                        <p>其实，简单成员拆分是此功能的一个子集，例如简单成员拆分中不能实现同时往生成的表格中附加2个表格，但是此功能可以实现。另外，在同一工作簿中的几个工作表均需要按某种成员拆分，且拆分的表格需要放在同一工作簿中时，可以使用功能。</p>
+                    </div>
+                    <div class="paragraph">
+                        <h5>✎2.如果某些成员仅存在于工作簿中的某些表格中，是否可以拆分？</h5>
+                        <p>可以拆分。例如：张三只有工资，没有奖金，则拆分得到的张三的工作簿中，将只有工资表，而没有奖金表。</p>
+                    </div>
+                    <div class="paragraph">
+                        <h5>✎3.如果参数表格中各张表格设置的拆分成员类型不同，会怎么样？例如：同一工作簿中sheet1按员工号拆分，sheet2按电话号码拆分。</h5>
+                        <p>此软件唯一能够识别的是成员的值，它不能识别成员类型。如果这几类成员的值的集合没有交集，则拆分效果跟分别拆分这几张工作表没有区别，会分别生成sheet1按员工号拆分的工作簿文件和sheet2按电话号码拆分生成的工作簿文件，员工号和手机号一般没有相同的情况，那分别会生成不同的工作簿。</p>
+                    </div>
+                </div>
+                <div class="sect2">
+                    <h3 id="_一簿多表拆分_常见问题">✔一簿多表拆分 常见问题</h3>
+                    <div class="paragraph">
+                        <p>1.将拆分依据的关键列号写成数字。=>错误，可能会导致软件崩溃！</p>
+                    </div>
+                </div>
+                <hr>
+                <h3 id="_批量简单成员拆分_使用步骤">✔批量简单成员拆分 使用步骤:</h3>
+                <div class="paragraph">
+                    <div id="gitweb" class="imageblock">
+                        <div class="content">
+                            <img src="images/批量简单成员拆分操作界面.png" alt="批量简单成员拆分操作界面图">
+                        </div>
+                        <div class="title">批量简单成员拆分操作界面</div>
+                    </div>
+                    <p>1.选择要拆分的Excel文件所在的文件夹!</p>
+                    <p>2.点击生成拆分参数表格！在这一步中，本软件将打开文件夹及其子孙文件夹中的所有EXCEL文件，并且抽取相关的sheet页信息到参数表格中。</p>
+                    <div id="gitweb" class="imageblock">
+                        <div class="content">
+                            <img src="images/高级拆分搜索后在文件夹中生成批量拆分参数表.png" alt="高级拆分搜索后在文件夹中生成批量拆分参数表图">
+                        </div>
+                        <div class="title">高级拆分，搜索后在文件夹中生成批量拆分参数表</div>
+                    </div>
+                    <p>3.找到步骤2中生成的参数表格，并且填写相应的拆分参数！填写的数据和简单成员拆分中的基本上相同，就是填写拆分的列标和正文开始的行号。</p>
+                    <div id="gitweb" class="imageblock">
+                        <div class="content">
+                            <img src="images/高级拆分2参数填写.png" alt="高级拆分2参数填写图">
+                        </div>
+                        <div class="title">高级拆分中，简单成员拆分批量操作的参数填写方法</div>
+                    </div>
+                    <p>4.以上选择设置完毕，请点击开始拆分。</p>
+                </div>
+
+
+                <div class="sect2">
+                    <h3 id="_批量简单成员拆分_使用技巧">✔批量简单成员拆分 使用技巧</h3>
+                    <div class="paragraph">
+                        <h5>✎1.本功能的具体用途是什么？</h5>
+                        <p>
+                            本功能其实只是实现了简单成员操作的批量操作，可以用于同时按几列筛选拆分的情况，比如先按C列拆分，再按D列拆分时可以使用这一功能。具体操作方法为：先使用简单成员拆分将工作簿按C列拆分为多个，再使用此功能对拆分得到的工作簿按D列进行拆分。
+                        </p>
+                        <h5>✎2.两个进度条的作用分别是什么?</h5>
+                        <p>页面上小的进度条表示文件处理的进度，而页面中间大的进度条表示该文件中成员拆分的进度。</p>
+                        <div id="gitweb" class="imageblock">
+                            <div class="content">
+                                <img src="images/大小进度条的作用.png" alt="大小进度条的作用图">
+                            </div>
+                            <div class="title">大小进度条的作用</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sect2">
+                    <h3 id="_批量简单成员拆分_常见问题">✔批量简单成员拆分 常见问题</h3>
+                    <div class="paragraph">
+                        <p>暂无</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+        <hr>
+        <div class="sect1">
+            <h2 id="_简易拆分">☀简易拆分</h2>
+            <div class="sectionbody">
+                <div class="paragraph">
+                    <p style="color:blue">主要实现以下2个功能：</p>
+                    <p style="color:blue">1.按固定行数对某一个表格进行拆分!</p>
+                    <p style="color:blue">2.按生成的工作簿个数对一个表格进行拆分!</p>
+                </div>
+                <h3 id="_按固定行数拆分_使用步骤">✔按固定行数拆分 使用步骤:</h3>
+                <div class="paragraph">
+                    <p>1.选择要拆分的Excel文件!</p>
+                    <p>2.选择要拆分的sheet页 (注意:选择文件后，软件会获取表格中的sheet页信息，如果表格有密码，请先取消密码，再拆分)!</p>
+                    <p>3.填写标题的行数。注意：表头的部分不会计算到数据的行数中，生成的每一个工作表都将包含完整的表头。</p>
+                    <p>4.填写拆分后，每一个工作表中的行数！</p>
+                    <p>5.以上选择设置完毕，请点击开始拆分。</p>
+                </div>
+                <div class="sect2">
+                    <h3 id="_按固定行数拆分_使用技巧">✔按固定行数拆分 使用技巧</h3>
+                    <div class="paragraph">
+                        <p>本工具比较简单，使用起来，应该没有什么难度。</p>
+                    </div>
+                </div>
+                <div class="sect2">
+                    <h3 id="_按固定行数拆分_常见问题">✔按固定行数拆分 常见问题</h3>
+                    <div class="paragraph">
+                        <p>无</p>
+                    </div>
+                </div>
+                <h3 id="_按生成的工作簿个数拆分_使用步骤">✔按生成的工作簿个数拆分 使用步骤:</h3>
+                <div class="paragraph">
+                    <p>1.选择要拆分的Excel文件!</p>
+                    <p>2.选择要拆分的sheet页 (注意:选择文件后，软件会获取表格中的sheet页信息，如果表格有密码，请先取消密码，再拆分)!</p>
+                    <p>3.填写标题的行数。注意：表头的部分不会计算到数据的行数中，生成的每一个工作表都将包含完整的表头。</p>
+                    <p>4.填写拆分后，想要得到的工作簿个数！</p>
+                    <p>5.以上选择设置完毕，请点击开始拆分。</p>
+                </div>
+                <div class="sect2">
+                    <h3 id="_>按生成的工作簿个数拆分_使用技巧">✔按生成的工作簿个数拆分 使用技巧</h3>
+                    <div class="paragraph">
+                        <p>本工具比较简单，使用起来，应该没有什么难度。</p>
+                    </div>
+                </div>
+                <div class="sect2">
+                    <h3 id="_>按生成的工作簿个数拆分_常见问题">✔按生成的工作簿个数拆分 常见问题</h3>
+                    <div class="paragraph">
+                        <p>无</p>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+        <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+        <hr>
+        <div class="sect1">
+            <h2 id="#_other_split">☀其他拆分方式</h2>
+            <div class="sectionbody">
+                <div class="paragraph">
+                    <p style="color:blue">主要实现以下2个功能：</p>
+                    <p style="color:blue">1.按表格名称分离sheet页为独立工作簿。</p>
+                    <p style="color:blue">2.数据透视表拆分。</p>
+                </div>
+                <h3 id="_按Sheet页名称拆分_使用步骤">✔按Sheet页名称拆分 使用步骤:</h3>
+                <div class="paragraph">
+                    <p>1.选择要拆分的Excel文件!</p>
+                    <p>2.请点击开始拆分。每一个sheet页将会被分享为单独的工作簿。</p>
+                    <p style="color:blue">其实，这个表格分离的功能使用起来，真的太简单了，所以就不多说了哈！</p>
+                </div>
+                <hr>
+                <h3 id="_数据透视表拆分_使用步骤">✔数据透视表拆分 使用步骤:</h3>
+                <div class="paragraph">
+                    <p>1.选择要拆分的Excel文件!</p>
+                    <p>2.选择数据透视表所在的表格(sheet页)。</p>
+                        <div id="gitweb" class="imageblock">
+                            <div class="content">
+                                <img src="images/数据透视表拆分示例.png" alt="数据透视表拆分示例">
+                            </div>
+                            <div class="title">数据透视表拆分示例</div>
+                        </div>
+                    <p>3.要拆分的数据透视表字段名称。</p>
+                        <div id="gitweb" class="imageblock">
+                            <div class="content">
+                                <img src="images/数据透视表拆分填写.png" alt="数据透视表拆分填写">
+                            </div>
+                            <div class="title">数据透视表拆分参数填写</div>
+                        </div>
+                    <p>4.请点击开始拆分。每一个sheet页将会被分享为单独的工作簿。</p>
+                        <div id="gitweb" class="imageblock">
+                            <div class="content">
+                                <img src="images/数据透视表拆分结果.png" alt="数据透视表拆分结果">
+                            </div>
+                            <div class="title">数据透视表拆分结果</div>
+                        </div>
+                </div>
+                <div class="sect2">
+                    <h3 id="_数据透视表拆分_使用技巧">✔数据透视表拆分 使用技巧</h3>
+                    <div class="paragraph">
+                        <h5>✎1.拆分得到的数据透视表为包含所有信息吗？</h5>
+                        <p>不会。软件在将数据拆分到新工作簿时，采用了先复制数据，再复制格式的方式，拆分得到表格已经不是数据透视表，仅仅是本成员字段对应的数据。</p>
+                    </div>
+                </div>
+                <div class="sect2">
+                    <h3 id="_数据透视表拆分_常见问题">✔数据透视表拆分 常见问题</h3>
+                    <div class="paragraph">
+                        <p>在填写拆分字段时，请不要填写错误!如果找不到数据透视表中的字段，可能会导致软件错误。</p>
+                        <div id="gitweb" class="imageblock">
+                            <div class="content">
+                                <img src="images/数据透视表字段的值.png" alt="数据透视表字段的值">
+                            </div>
+                            <div class="title">数据透视表字段的值</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+        <hr>
+        <div class="sect1">
+            <h2 id="_发送邮件">☀发送邮件</h2>
+            <div class="sectionbody">
+                <div class="paragraph">
+                    <p style="color:blue">本软件可以使用Jmail,QtMailClient,以及OutLook进行邮件发送，使用其提供的邮件发送模块，你可以实现以下功能：</p>
+                    <p style="color:blue">1.将一封带有主题，正文，附件的邮件发给一个或多个收件人。</p>
+                    <p style="color:blue">2.支持超大附件：本软件采用的QtSmtp发送组件经过特殊处理，在网速较慢的情况下，延长附件上传的时间。</p>
+                    <p style="color:blue">3.支持使用EXCEL表对多个发件箱进行管理，可以做到每一封邮件使用指定的发件箱进行发送。</p>
+                    <p style="color:blue">4.支持发件箱切换，如果出现发送失败的情况，本软件可以智能地从发件箱队列中选择一个可以成功发送的发件箱进行发送。</p>
+                    <p style="color:blue">5.支持使用HTML邮件模板发送。</p>
+                    <p style="color:blue">6.支持对主题，正文和HTML内容进行变量替换，这一点在反反垃圾邮件和发送工资条，账单等信息时，非常有用。</p>
+                    <p style="color:blue">7.支持使用socks 5进行动态代理发送，让您的每一封邮件发送的IP都不同。</p>
+                    <p style="color:blue">8.支持统一设置对方回复至的邮箱，发件箱可能有很多个，但是可以在对方点击回复时，回复至同一个指定的邮箱。</p>
+                    <p style="color:blue">9.支持设置代发邮箱，可以任意指定代发的邮箱账号和邮箱名称。</p>
+                    <p style="color:blue">10.可以对发送结果进行黑名单管理，启用黑名单名，将不再对黑名单中的邮箱进行发送。</p>
+                    <p style="color:blue">11.非常详细的邮件发送过程日志记录。可以非常详细地追踪到每一封邮件发送的情况。</p>
+                    <p style="color:blue">12.发送结果保存至SQLITE数据库，并且能够非常方便地导出来进行分析。</p>
+                    <p style="color:blue">13.其他功能，不再一一列举。</p>
+                </div>
+                <h3 id="_发送邮件_使用步骤">✔发送邮件 使用步骤:</h3>
+                <div class="paragraph">
+                    <p>1.获取邮件发送的参数表格：有两种获取方式。■方法一：直接使用软件包中提供的模板文件填写发送。■方法二：使用邮件工具，检索文件夹后，生成邮件参数表格，这种方法得到的参数表格中已经填写了文件夹内的附件名称。</p>
+                    <p>2.填写邮件发送参数表格中的收件人信息，包括收件人姓名，收件邮箱，主题，正文，附件，HTML邮件模板，邮件标记，变量的值等。</p>
+                    <div id="gitweb" class="imageblock">
+                        <div class="content">
+                            <img src="images/邮件收件人信息填写.png" alt="邮件收件人信息填写图">
+                        </div>
+                        <div class="title">邮件收件人信息填写</div>
+                    </div>
+                    <p style="color:red">参数填写的注意事项:</p>
+                    <p style="color:red">■多收件人之前使用英文分号分隔，多附件路径之间使用英文分号分隔。收件人邮箱一定要填写，不然，会直接跳过该行。</p>
+                    <p style="color:red">■主题，正文，以及HTML邮件模块中的变量使用类似于%%var0%%,%%var1%%这样的占位符占位，发送时，软件会使用变量区域对应的值替换这些变量。</p>
+                    <p style="color:red">■如果同时设置了正文和HTML邮件模块，默认会使用HTML邮件模块中的内容。</p>
+                    <p style="color:red">■邮件标记列用于跟踪每一封邮件，您可以在里面设置你的标记，用于跟踪邮件，另外，在使用邮件工具搜索附件时，会在里面试图生成成员拆分中的成员名，便于使用vlookup查找成员名对应的邮箱。如果搜索的文件不是拆分得到的文件，这一步没有实质的用处。</p>
+            
+                    <p style="color:blueviolet">3.填写发件箱信息，一共有3个地方可以填写发件箱信息，您只要选择其中一处填写即可。如果同时填写，他们的优先级有区别：</p>
+                    <p style="color:blueviolet">■ mailSendData:优先级最高。表格每一行为一封独立的邮件，如果本页中填写了发件箱信息，则优先使用本页中的发件人信息。</p>
+                    <p style="color:blueviolet">■ 软件面板：优先级中等。如果mailSendData中本行没有填写发件人信息，则使用软件面板中的信息进行发送。</p>
+                    <p style="color:blueviolet">■ senderList：优先级最低。如果以上双项均未填写或发送失败，则自动切换为从senderList列表中发送邮件</p>
+                    <p>4.填写完成后，保存关闭参数表格，并在软件面板中加载此参数表格。</p>
+                    <p>5.点击发送即可。</p>
+                </div>
+                <div class="sect2">
+                    <h3 id="_发送邮件_使用技巧">✔邮件发送 使用技巧</h3>
+                    <div class="paragraph">
+                        <h5>✎1.邮件发送服务端口为25,465,587等，它们的区别是什么？</h5>
+                        <p>此问题，其实可以在百度上找到答案。25号端口是http普通邮件发送端口，邮件以非加密的方式进行传输；而465，587等端口为https加密端口，安全性比较高。目前几大运营商中，网易同时支持25，465端口，而腾讯的QQ邮箱则只支持465加密端口。具体情况，请查看邮箱的帮助页面。</p>
+                        <h5>✎2.授权码是什么，为什么腾讯QQ和网易126，163等邮箱必须使用授权码进行发送？</h5>
+                        <p>腾讯和网易邮箱是国内最大的2家邮箱运营商，同时，他们的邮箱帐号也具有一网通的属性，为了保证帐户的安全，腾讯和网易要求在使用第三方客户端进行邮件发送时，必须使用授权码进行发送，授权码仅能用于发送邮件，不能作为其他用途，且可以随时取消，因此非常安全。授权码请在邮箱的SMTP设置页面按提示获取。</p> 
+                        <h5>✎3.本软件支持Exchange协议发送吗？</h5>
+                        <p>Exchange为微软的私有邮件发送协议，为了安全性，很多企业邮箱关闭了smtp发件功能，仅支持exchange协议，这就要求您只能使用outlook等微软自有的客户端进行发送。本软件提供了调用outlook的接口进行批量邮件发送，因此也算是间接支持这种协议吧，具体的使用方式请看outlook发送邮件的部分内容。</p>      
+                        <h5>✎4.为什么需要设置适当的发送间隔时间？</h5>
+                        <p>因为本软件发送邮件的速度太快，异于常人，可在短时间内发送大量邮件，从而造成对邮件服务器资源的抢占，因此绝大部分的邮件服务器都对发送频率有要求，如果频率太高，会被认为是攻击，从而发送失败。因此，需要设置一定的发送间隔时间。</p>       
+                        <h5>✎5.本软件中的Jmail组件和QT-SMTP-CLIENT有什么不同？</h5>
+                        <p>Jmail是一个著名的服务端邮件发送组件，由Dimac公司提供，该组件的质量比较高，但仅支持25号端口，不支持465等加密端口，并且Jmail组件需要另外安装，因此优先推荐使用qt-smtp-client组件发送。qt-smtp-client邮件是github的开源qt项目，作者在fork之后自己加入了一些特性，功能强大，同时支持25，465等端口，从目前使用的情况看，也是非常稳定的。但是，有一些特殊的企业邮箱，使用Jmail能够发送成功，但是使用qt-smtp-client却可能会失败，因此作者保留了该软件中的Jmail模块。</p>    
+                        <h5 id="_如何设置统一回复至(ReplyTo)邮箱">✎6.如何设置统一回复至(ReplyTo)邮箱？</h5> 
+                        <p>使用记事本打开软件目录中的platforms文件夹中的settings.ini文件，设置reply_to_mailaddress和reply_to_mailaddressName的值。需要指出的是，使用代发邮箱时，没有获取真正的代发邮箱的授权，因此可以随意设置代发邮箱，例如你可以将代发邮箱设置为别人的邮箱，这是可以发送成功的。但是这也增加了触发反垃圾邮件策略的可能性。设置方式，如图：</p>
+                        <div id="gitweb" class="imageblock">
+                            <div class="content">
+                                <img src="images/设置统一回复至邮箱.png" alt="设置统一回复至邮箱">
+                            </div>
+                            <div class="title">设置统一回复至邮箱</div>
+                        </div>
+                        <h5>✎7.如何设置统一代发邮箱(Proxy)？</h5> 
+                        <p>使用记事本打开软件目录中的platforms文件夹中的settings.ini文件，设置proxy_mail_sender和proxy_mail_senderName的值。如图：</p>
+                        <div id="gitweb" class="imageblock">
+                            <div class="content">
+                                <img src="images/设置代发邮箱.png" alt="设置代发邮箱">
+                            </div>
+                            <div class="title">设置代发邮箱</div>
+                        </div>
+
+                        <p style="color:blue">代发的邮件如图所示：</p>
+                        <div id="gitweb" class="imageblock">
+                            <div class="content">
+                                <img src="images/代发邮件头示例.png" alt="代发邮件头示例">
+                            </div>
+                            <div class="title">代发邮件头示例</div>
+                        </div>
+
+                        <h5 id="_如何导出数据库中的邮件发送结果">✎8.如何导出数据库中的邮件发送结果？</h5>
+                        <p>邮件发送以后，会在软件的目录中生成一个数据库文件，名为mailSendDatabase.db，只要在软件界面上点击 导出发送结果，软件自动将发送结果导出到CSV文件中，使用EXCEL打开该文件即可。如图：</p>
+                        <div id="gitweb" class="imageblock">
+                            <div class="content">
+                                <img src="images/导出数据库中的发送结果.png" alt="导出数据库中的发送结果">
+                            </div>
+                            <div class="title">导出数据库中的发送结果</div>
+                        </div>
+                        <h5 id="_如何查看邮件发送失败的原因">✎9.如何查看邮件发送失败的原因？</h5>
+                        <p>其实，比较简单，使用SMTP发送邮件的过程，就是本地组件和邮件服务器通讯的过程，大概分为几个步骤：</p>
+                        <p style="color:blue">第1步：建立TCP连接。如果这一步失败，说明SMTP服务器填写错误，具体的提示是：无法连接到服务器！</p>
+
+                        <div class="listingblock">
+                            <div class="content">
+                                <pre class="highlight"><code class="language-console" data-lang="console">SslConnection:host=smtp.qq.com,port=465 Connection OK. \
+Wait for the server's response 220 \
+220 smtp.qq.com Esmtp QQ Mail Server</code></pre>
+                            </div>
+                        </div>
+
+                        <p style="color:blue">第2步：客户端发送HELO命令以标识发件人自己的身份，然后客户端发送MAIL命令；服务器端正希望以OK作为响应，表明准备接收。如果这一步失败，则会提示无法登陆到服务器。</p>
+
+                        <div class="listingblock">
+                            <div class="content">
+                                <pre class="highlight"><code class="language-console" data-lang="console"><-EHLO localhost ,wait for 250 \
+250-smtp.qq.com
+250-PIPELINING
+250-SIZE 73400320
+250-AUTH LOGIN PLAIN
+250-AUTH=LOGIN
+250-MAILCOMPRESS
+250 8BITMIME
+
+<-AUTH PLAIN ,wait for 235 \
+235 Authentication successful</code></pre>
+                            </div>
+                        </div>
+
+                        <p style="color:blue">第3步:客户端发送RCPT命令，以标识该电子邮件的计划接收人，可以有多个RCPT行；服务器端则表示是否愿意为收件人接收邮件，如果愿意，则返回信号250</p>
+                        <div class="listingblock">
+                            <div class="content">
+                                <pre class="highlight"><code class="language-console" data-lang="console"><-MAIL FROM: <956302200@qq.com>,wait for 250 \
+250 Ok
+<-RCPT TO: <523915712@qq.com>,wait for 250 \
+250 Ok</code></pre>
+                            </div>
+                        </div>
+                        <p style="color:blue">第4步:协商结束，发送邮件，用命令DATA发送</p>
+                        <div class="listingblock">
+                            <div class="content">
+                                <pre class="highlight"><code class="language-console" data-lang="console"><-DATA:  wait for 354 \
+354 End data with <CR><LF>.<CR><LF></code></pre>
+                            </div>
+                        </div>
+                        <p style="color:blue">第5步:以.表示结束输入内容一起发送出去</p>
+                        <div class="listingblock">
+                            <div class="content">
+                                <pre class="highlight"><code class="language-console" data-lang="console"><-.  wait for 250 \
+250 Ok: queued as
+<-MAIL FROM: <956302200@qq.com>,wait for 250 \
+250 Ok
+<-RCPT TO: <523915712@qq.com>,wait for 250 \
+250 Ok
+<-DATA:  wait for 354 \
+354 End data with <CR><LF>.<CR><LF>
+<-.  wait for 250 \
+250 Ok: queued as </code></pre>
+                            </div>
+                        </div>
+                        <p style="color:blue">第6步：结束此次发送，用QUIT命令退出，这一步由软件自动完成。</p>
+                        <p style="color:red">以上的每一个交互中，都使用一个3位数的数字进行信号表达。例如最后一步，本地在提交.号之后，表示邮件内容已经传输完毕，这时需要SMTP服务器应答，等待成功的信号250，如果服务器返回250，则表示邮件发送成功；如果返回其他码，则需要看提示，以及邮件运营商的代码含义。</p>
+                        <div id="gitweb" class="imageblock">
+                            <div class="content">
+                                <img src="images/如果看懂邮件发送日志.png" alt="如果看懂邮件发送日志">
+                            </div>
+                            <div class="title">如果看懂邮件发送日志</div>
+                        </div>
+                        <h5 id="_显示发送成功，但为什么没有收到邮件">✎10.如何确保软件上显示发送成功的含义是什么？准确吗？为什么我发件箱里没有邮件？</h5>
+                        <p>正如第9个问题所示，本软件判断发送成功还是失败的依据是邮件服务器返回的状态码，因此显示发送成功，那肯定已经将邮件提交给了邮件服务器。但是，正如我们收快递一样，显示已经签收了，那么对方是不是就一定收到快递了呢？不一定，收件人确认收到快递以后，可能看没看，就把快递扔进垃圾箱了，或者看了一下，把快递退回来了。发邮件也是同样的道理，服务器在确认发送成功以后，有可能被对方退信，或者对方服务器认为这是垃圾邮件，直接拦截了，对于拦截的这种情况，让对方去收信记录里找，然后让他添加你的帐号到白名单即可。</p>
+                        <h5 id="_如何避免触发反垃圾邮件策略">✎11.如何避免触发反垃圾邮件策略？</h5>
+                        <p>其实吧，邮箱运营商的反垃圾邮件策略是保密的，不会让你知道，但是一般认为，腾讯QQ邮箱更看重发送邮件的IP的质量和信誉，如果IP的质量比较高，则可能会拥有更多的发送额度，反之如果从这个IP发送的邮件被很多人报告为垃圾邮件，则会减少额度。另外，从邮件的内容，数量等方面也可能判断出一些垃圾邮件的特征，例如：大量的内容重复的邮件，那很可能就是垃圾邮件了。随着机器学习，人工智能等技术的兴起，要发垃圾邮件，真的是越来越不容易了。</p>
+                    </div>
+                </div>
+                <div class="sect2">
+                    <h3 id="_发送邮件_常见问题">✔发送邮件 常见问题</h3>
+                    <div class="paragraph">
+                        <p>
+                            1.将QQ邮箱和126，163等网易邮箱发送邮件的授权码写成密码，导致发送失败。
+                        </p>
+                        <p>
+                            2.将SMTP或者端口号写错，本软件中已经内置了国内外主流邮箱的SMTP，可以自动检测出来，对于使用企业邮箱发送的，可以在企业的帮助页面查看SMTP以及端口等信息，如果你已经在OUTLOOK,FOXMAIL等邮件客户端中绑定了该邮箱，也可以在OUTLOOK,FOXMAIL的设置中查看SMTP信息。最后，你还可以帮你们公司的邮箱管理员或者同事求助。网易闪电邮在使用网易邮箱时，使用的是私有协议，因此即使网易邮箱的SMTP没有打开，也可以使用网易闪电邮进行发送。
+                        </p>
+                        <p>3.看到有3个地方可以填写发件箱信息，不知道在哪里填写。其实，你选择一个地方填写就可以了，其他2个地方建议你空着。如果都要填写，优先级为：mailSendData > 软件界面 > senderList</p>
+                        <p>4.邮件在使用SMTP发送以后，是否自动保存至发件箱，这个要取决于邮箱的设置，请在邮箱的SMTP设置中找到相关设置，并打开。</p>
+                        <p>5.获取授权码，请在邮箱SMTP功能启用后，按提示进行设置，国内的邮箱一般是腾讯和网易的邮箱需要使用授权码来发送。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+        <hr>
+        <div class="sect1">
+            <h2 id="_文件搜索工具">☀邮件工具 文件搜索工具</h2>
+            <div class="sectionbody">
+                <div class="paragraph">
+                    <p style="color:blue">功能：使用本功能，你可以把一个文件夹中的子子孙孙文件搜索出来，将填写到一个邮件发送参数表格中，用于发送邮件!</p>
+                </div>
+                <h3 id="_邮件工具_使用步骤">✔如何搜索文件夹，获取文件夹中的文件列表？</h3>
+                <div class="paragraph">
+                    <p>1.选择要获取文件列表的最外层文件夹!</p>
+                    <p>2.点击按扭检索即可。</p>
+                    <p style="color:blue">本功能可以使用递归查找的方式获取您选择的文件夹中的子子孙孙文件，因此您只要选择最外层的文件夹就可以啦！</p>
+                </div>
+                <div class="sect2">
+                    <h3 id="_搜索文件_问答">✔搜索文件 问答</h3>
+                    <div class="paragraph">
+                        <h5>✎1.多层文件夹，如何获取文件列表？</h5>
+                        <p>只需要选择最外层文件夹，即可递归查找到所有文件。</p>
+                        <h5>✎2.搜索文件有什么作用？</h5>
+                        <p>主要是使用于邮件发送时邮件的附件路径自动填写，因为手动填写比较困难。搜索结果会被保存在一个邮件发送参数表格中，可以在此表格中填写邮件发送信息，然后加载该参数表，即可发送邮件。</p>
+                    </div>
+                </div>
+                <div class="sect2">
+                    <h3 id="_搜索文件_常见问题">✔搜索文件 常见问题</h3>
+                    <div class="paragraph">
+                        <p>暂无</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        <div class="sect1">
+            <h2 id="_如何使用OutLook发送邮件">☀如何使用OutLook发送邮件？</h2>
+            <div class="sectionbody">
+                <div class="paragraph">
+                    <p style="color:blue">功能：使用本功能，你可以调用系统中安装的outlook组件，来发送邮件!</p>
+                </div>
+                <h3 id="_使用outlook发送邮件的步骤是怎么样">✔使用outlook发送邮件的步骤是怎么样？</h3>
+                <div class="paragraph">
+                    <p style="color:blue">准备工作:在电脑上配置好outlook，并且能够使用outlook发送邮件。</p>
+                    <p>1.找到邮件参数表格，在sendWithOutLook表格中填写相应的发送参数。</p>
+                        <div id="gitweb" class="imageblock">
+                            <div class="content">
+                                <img src="images/outlook发送邮件收件人.png" alt="outlook发送邮件收件人">
+                            </div>
+                            <div class="title">outlook发送邮件收件人</div>
+                        </div>
+                    <p>2.选择邮件发送参数表格。</p>
+                    <p>3.选择要发送邮件的账号。</p>
+                    <p>4.设置适当的发送间隔时间。</p>
+                    <p>5.点击发送。</p>
+                        <div id="gitweb" class="imageblock">
+                            <div class="content">
+                                <img src="images/outlook发送界面.png" alt="outlook发送界面">
+                            </div>
+                            <div class="title">outlook发送界面</div>
+                        </div>
+                    <p style="color:blue">在发送之前，请确保您的outlook帐户已经配置好，能够发送文件。</p>
+                </div>
+                <div class="sect2">
+                    <h3 id="_使用OutLook发送邮件_使用技巧">✔使用OutLook发送邮件 问答</h3>
+                    <div class="paragraph">
+                        <h5>✎1.使用outlook发送有什么优势？</h5>
+                        <p>outlook是微软公司的软件，一些基于微软exchange服务器的邮箱可能默认关闭了smtp服务器，这时只能通过调用outlook的方式进行发送邮件，另外，使用outlook发送的邮件，在本地的发件箱里有记录，可以随时查看发件记录。</p>
+                        <h5>✎2.此功能支持哪些版本的outlook？</h5>
+                        <p>目前，仅仅在outlook 2016上测试，其他版本未测试。不过，作者在编写代码的时候，尽量避免了使用最新的API，因此之前的版本也应该是支持的。但是平板电脑版本的outlook RT版本肯定是不支持了，因为它根本不支持VBA接口调用！</p>
+                    </div>
+                </div>
+                <div class="sect2">
+                    <h3 id="_使用OutLook发送邮件_常见问题">✔使用OutLook发送邮件 常见问题</h3>
+                    <div class="paragraph">
+                        <p>暂无</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+        <hr>
+        <div class="sect1">
+            <h2 id="_合并表格">☀合并表格</h2>
+            <div class="sectionbody">
+                <div class="paragraph">
+                    <p style="color:blue">功能：将不同的sheet页中的数据，以追加的方式复制到其他sheet页中!</p>
+                    <h5 id="_表格合并的基本思路">✎✔表格合并的基本思路和难点:</h5>
+                    <p style="color:blue">基本思路：实现思路其实很简单，跟手工操作相似，就是把表格中的指定范围的行复制下来，然后粘贴到指定的表格中，而在操作过程中，软件会自动判断您指定的工作簿的目录是否存在？工作簿是否存在？指定的工作簿中的sheet页是否存在？如果不存在，则会自动指定一个默认的工作簿或者帮您创建相应的文件夹，工作簿，表格等。因此，操作的第一步是选择您要合并的文件所在的文件夹，第二步是从这些文件夹中把EXCEL文件搜索出来，打开它们，然后获取这些sheet页的信息，包括所在的工作簿的名称，sheet页的名称，已经使用的行数和列数等，然后将这些信息导入到一个合并参数表格中，您需要做的就是从这个合并参数表格中把不需要合并的信息记录删除，指定需要复制到目标sheet页中的数据的起始行(默认为1)，终止行(默认为表格已经使用的最大行)，然后指定目标工作簿的名称，以及目标sheet页的名称(当然了，如果这2项不指定，那软件会自行为你指定一个默认的工作簿和工作表)，想一想，这个实现思路是不是和手工操作非常相似呢？</p>
+                    <p>因此，这个模块能够实现的操作就比较多了？</p>
+                    <p>■当清除参数表格中的终止行的时候，软件会直接移动这个sheet页。利用这个功能，可以批量地移动工作簿中的工作表，比如将他们移动到同一个工作簿中，您为它指定什么工作簿，它就会移动到什么工作簿中，如果这个指定的工作簿不存在，那软件还可以自动帮你创建。</p>
+                    <p>■用于批量分离sheet页：本软件提供了分离sheet页的功能，但是那只能实现单个文件的操作，并且不能指定要分离出哪些sheet页，但是利用本模块中的移动sheet页的功能，就可以把sheet页从不同的工作簿中分离出来，并保存为独立的工作簿。</p>
+                    <p>■用于将很多格式相同的表格合并到同一个sheet页中，当然了，您可以分组设置合并目标的sheet页，从而实现不同分类的数据分别合并，例如：有许多工作簿，每一个工作簿中同时有工资表，奖金表等，可以利用此软件的合并功能，将工资表合并至工资表，将奖金表合并至奖金表。</p>
+                </div>
+                <h3 id="_按行合并 使用步骤">✔按行合并 使用步骤</h3>
+                <div class="paragraph">
+                    <p>1.选择要合并的Excel文件所在的文件夹!</p>
+                    <p>2.生成参数列表 (注意:选择文件后，软件会获取表格中的sheet页信息，如果表格有打开密码，请先取消密码，再操作，不然会打开失败)!</p>
+                    <p>3.可选项：编辑步骤2中生成的参数表格，具体编辑方法前文已经有说明：在参数表中将不需要合并的sheet表记录删除，指定合并数据区域的起始行，终止行，以及合并的目标工作簿名称，目标sheet页名称。当然了，您可以跳过这一步，因为本软件有默认设置。</p>
+                        <div id="gitweb" class="imageblock">
+                            <div class="content">
+                                <img src="images/按行合并 参数填写.png" alt="按行合并 参数填写">
+                            </div>
+                            <div class="title">按行合并 参数填写</div>
+                        </div>
+                    <p>4.以上选择设置完毕，请点击确定，开始合并。</p>
+                </div>
+                <div class="sect2">
+                    <h3 id="_合并表格_使用技巧">✔按行合并 使用技巧</h3>
+                    <div class="paragraph">
+                    <h5>✎1.直接合并的时候，默认复制了所有的数据内容，请问在合并结果里面，如何删除表头？</h5>
+                        <p>有2种方法可以删除这些重复的表头。</p>
+                        <p>■方法一：本软件在复制数据区域时，默认使用绿色标记了数据区域的左上角第一个单元格，可以使用EXCEL提供的颜色筛选功能，将这些绿色的行筛选出来，然后批量删除。如果表头只有一行当适合使用此方法，采用这种方式还可以核对各个参与合并的表格的列是不是错位了哟。</p>
+                        <div id="gitweb" class="imageblock">
+                            <div class="content">
+                                <img src="images/表格合并 按颜色筛选出标题行.png" alt="表格合并 按颜色筛选出标题行">
+                            </div>
+                            <div class="title">表格合并 按颜色筛选出标题行 核对后 删除</div>
+                        </div>
+                        <p>■方法二：在合并参数表格中指定数据的起始行，这种方式适合用于表头有多行，且表头固定的情况。</p>
+                    <h5 id="_如何删除合并结果中的空白行">✎2.为什么合并时数据区域的末尾有很多空白行？</h5>
+                        <p>这些空白行其实就多余的单元格区域，它们没有数据，却占用了行数，因此被复制到了合并工作表中。</p>
+                        <p>■解决方法一：在生成参数表时，请查看各sheet页已经使用的行数，如果已经使用的行数已经达到65535或者104万行，那请使用清除工具将这些区域清除以后再合并，或者指定一个终止行。</p>
+                        <p>■解决方法二：如果仅有少量的空白区域被引入，那可以使用排序的方式对某列进行排序，这些空白区域就会排在后面了，然后将他们统一删除。</p>
+                        <div id="gitweb" class="imageblock">
+                            <div class="content">
+                                <img src="images/采用排序法去掉空行.png" alt="采用排序法去掉空行">
+                            </div>
+                            <div class="title">采用排序法去掉空行</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sect2">
+                    <h3 id="_按行合并_常见问题">✔按行合并 常见问题</h3>
+                    <div class="paragraph">
+                        <p>■当要合并的工作簿中只有一个表格，并且标题行只有一行时，可以不设置合并参数表格，而直接合并；但是当有不需要合并的表格或者需要规定起始行时，请一定要编辑合并参数表格再合并。</p>
+                        <p>■合并过程中，随着合并的文件体积越来越大，操作的速度也会越来越慢，这种情况，可以将合并的文件分为几组操作，最后再合并为一个文件。</p>
+                        <p>■xlsx格式的工作表容量为104万行，超过部分会丢失，本软件可以在内容超过104万行时，最自动新建一个工作表，用于存放合并的数据，如果文件体积大，请大家在合并前在合并参数表格中计算一下合并的行数加起来有多少行。最好不要超过104万。</p>
+                        <p>■合并时，默认为复制所有格式，如果想要仅仅复制值，请将参数表格中第一列的值修改为-4163</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        <div class="sect1">
+            <h2 id="_按列合并表格">☀按列合并表格</h2>
+            <div class="sectionbody">
+                <div class="paragraph">
+                    <p style="color:blue">功能：将不同的sheet页中的数据，以追加的方式复制到其他sheet页中!</p>
+                    <h5>✎✔按列表格合并的基本思路和要解决的问题:</h5>
+
+                    <p style="color:blue">■要解决的问题：有时候，我们收到的表格的列的顺序是乱的，比如使用scrapy爬虫抓取的数据的列顺序就可能是乱的，因为输出的结果是一个字典形式的数据，而字典的key是没有顺序的；或者您的同事交给你的表，列的顺序被调换了，或者加入减少了一些列。这时候我们需要在合并的时候，修正列的顺序，对于多出来的列，我们不需要复制到新的表格中来，对于缺失的列，我们希望空着吧。</p>
+                    <p style="color:blue">■实现的思路：先确定一个标准的合并模板，这需要由客户指定模板的路径和模板的sheet页，然后根据模板的标题行中的标题去找到需要合并的数据，以每一列为单位，把数据复制到模板中。这样就完成了对列标题顺序的指定。</p>
+
+                </div>
+
+                <h3 id="_按列合并 使用步骤">✔按列合并 使用步骤</h3>
+                <div class="paragraph">
+                    <p>1.选择要合并的Excel文件所在的文件夹!</p>
+                    <p>2.生成参数列表 (注意:选择文件后，软件会获取表格中的sheet页信息，如果表格有打开密码，请先取消密码，再操作，不然会打开失败)!</p>
+                    <p>3.必选项：编辑步骤2中生成的参数表格，具体编辑方法说明：在参数表中将不需要合并的sheet表记录删除，指定合并数据区域的起始行，终止行，标题行。以及合并的目标工作簿模板的名称，目标sheet页名称。注意，这是必须要设置的。</p>
+                        <div id="gitweb" class="imageblock">
+                            <div class="content">
+                                <img src="images/按列合并参数填写.png" alt="按列合并参数填写">
+                            </div>
+                            <div class="title">按列合并参数填写</div>
+                        </div>
+                    <p>4.以上选择设置完毕，请点击确定，开始合并。</p>
+                </div>
+                <div class="sect2">
+                    <h3 id="_合列表格_使用技巧">✔按列合并 使用技巧</h3>
+                    <div class="paragraph">
+                    <h5>✎1.什么情况下会用到按列合并？</h5>
+                        <p>■注意：只有在需要修正列的顺序的时候，需要用于按列合并，因为数据没有按区域复制，而是按列复制，所以这种方式合并会明显慢一些。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+        <hr>
+        <div class="sect1">
+            <h2 id="_清理表格">☀清理表格</h2>
+            <div class="sectionbody">
+                <div class="paragraph">
+                    <p style="color:blue">本模块主要实现2个功能：</p>
+                    <p style="color:blue">1.按指定的某列中的值是否为空值来删除行。</p>
+                    <p style="color:blue">2.将sheet页中的多余的单元格格式清除：你有没有发现，有时候，数据本身不多，但是工作簿打开非常卡，体积也很大，对于sheet页右侧的滚动条，数据已经到底了，但是滚动条只向下滚动了一点点？如果有这种情况，说明你的表格中引入了很多无用的单元格格式。</p>
+                    <p>以下是微软公司在office 2013/2016中提供的清除多余单元格格式插件，但是它一次只能操作一个工作簿，并且只支持高版本的EXCEL，本模块的目的是实现所有office版本中的批量清除功能。</p>
+                        <div id="gitweb" class="imageblock">
+                            <div class="content">
+                                <img src="images/采用inquire插件清除多余单元格格式.png" alt="采用inquire插件清除多余单元格格式">
+                            </div>
+                            <div class="title">采用inquire插件清除多余单元格格式</div>
+                        </div>
+                </div>
+                <h3 id="_删除空白行_使用步骤">✔删除空白行 使用步骤:</h3>
+                <div class="paragraph">
+                    <p>1.选择要删除空行的Excel文件所在的文件夹!</p>
+                    <p>2.点击生成参数表格。本软件会抽取每一张Sheet页的信息，并导入到参数表格中!</p>
+                    <p>3.在参数表格中设置要依据哪一列来删除空行。具体为，该列的单元格为空，这一行，就会被删除，例如指定C列，C5为空，则第5行被删除。</p>
+                        <div id="gitweb" class="imageblock">
+                            <div class="content">
+                                <img src="images/删除空白行参数填写.png" alt="删除空白行参数填写">
+                            </div>
+                            <div class="title">删除空白行参数填写</div>
+                        </div>
+                    <p>4.以上选择设置完毕，请点击开始拆分。</p>
+                </div>
+                <div class="sect2">
+                    <h3 id="_删除空行_使用技巧">✔删除空行 使用技巧</h3>
+                    <div class="paragraph">
+                        <p>软件在删除时，完全按参数表中的设置工作，如果某些表格不需要删除，在参数表中将他们的信息删除即可。</p>
+                    </div>
+                </div>
+                <div class="sect2">
+                    <h3 id="_清除多余单元格格式_使用步骤">✔清除多余单元格格式 使用步骤：</h3>
+                    <div class="paragraph">
+                        <p>1.选择要删除空行的Excel文件所在的文件夹!</p>
+                        <p>2.点击生成参数表格。</p>
+                        <p>3.打开参数表格，将不需要参与清除的sheet页信息行删除。</p>
+                        <p>4.点击确定，开始清除。</p>
+                    </div>
+                    <div class="paragraph">
+                        <p style="color:blue">注意：如果是整列或整行设置的格式，使用此功能后，除数据区域之外的内容可能会被全部清除。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+        <hr>
+        <div class="sect1">
+            <h2 id="_文件批量处理">☀文件批量处理</h2>
+            <div class="sectionbody">
+                <div class="paragraph">
+                    <p style="color:blue">功能：使用本功能，您可以实现文件的批量重命名，移动，删除等!</p>
+                </div>
+                <h3 id="_文件批量处理_使用步骤">✔使用步骤:</h3>
+                <div class="paragraph">
+                    <p>1.选择要处理的文件所在的文件夹!</p>
+                    <p>2.点击生成参数表格。当文件个数于小5000个时，生成xlsx格式的参数表格，当文件个数大于5000时，会生成csv格式的参数表格。</p>
+                    <p>3.编辑参数表格：参数表格只有2列，旧文件名和新文件名，请使用EXCEL强大的编辑能力，填充能力，公式去生成新的文件名吧。当你输入的新文件名所在的文件夹不存在，本软件会自动创建哟，您所要保证的是它的根目录存在就是了，比如，您写了C盘的目录，那你只要保证C盘存在就可以了。如果新文件名为：delete,null等，则旧文件会直接被删除。!</p>
+                    <p>4.以上选择设置完毕，请点击确定。</p>
+                </div>
+                <div class="sect2">
+                    <h3 id="_文件批量处理_使用技巧">✔文件批量处理 使用技巧</h3>
+                    <div class="paragraph">
+                        <p>■本模块具有递归自动创建文件夹的功能，例如：c:/a/b/1.txt,其中a,b文件夹不存在？它会自动帮你创建的。</p>
+                        <p>■当文件全名中的文件夹路径发生变化时，其实是移动文件。例如：旧文件名为c:/a/b/1.txt,新文件名为c:/a/c/1.txt,会将1.txt。</p>
+                        <p>■处理过程中，请确保后缀名要一致，例如：强行将1.xlsx文件复制为1.xls，虽然可以复制成功，但是可能会打开失败。图片是一个例外，因为图片的打开工具不是按后缀名来决定解码方式的，它是按文件头来决定的。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <h3 id="_结语">✔最后的结语</h3>
+        <p>本软件的编写和测试花费了作者大量的精力和时间，请大家尽量支持正版。欢迎各你身边的同事，朋友推荐本软件，作者一定会服务好你推荐的同事，朋友，如果不能使用，一定不会收钱的。</p>
+
+    </div>
+    <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    </div>
+    <div id="footer">
+        <div id="footer-text">本文档为在线文档，基于Gitee的pages功能托管，作者可能会随时更新，修复漏洞，请大家不要保存本文档。 联系方式QQ:956302200，最后更新时间:2018-07-31 10:56
+        </div>
+    </div>
+</body>
+
+</html>
